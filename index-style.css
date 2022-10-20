@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "Norse";
+    src: url("./norse/Norse.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Norse, sans-serif;
+
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+li {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+li img {
+    width: 350px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+li img:hover {
+    transform: scale(1.2);
+}
+
+.image-container {
+    overflow: hidden;
+    border: 5px solid;
+    border-image: linear-gradient(to left, rgb(124 89 32), rgb(169 121 43)) 1;
+}
+
+.image-container img {
+    margin-bottom: -0.5rem;
+}
